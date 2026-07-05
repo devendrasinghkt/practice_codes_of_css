@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Column Positioning</title>
+
+    <style>
+
+        /* Grid Container */
+        .container{
+            display: grid;
+
+            /* Create 4 equal columns */
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 10px;
+        }
+
+        /* Common style for all items */
+        .item{
+            background-color: lightblue;
+            border: 2px solid blue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Item 1 spans from column line 1 to 3 */
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        /* Item 4 spans from column line 2 to 5 */
+        .item4{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+</html>

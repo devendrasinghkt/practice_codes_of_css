@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS z-index Example</title>
+
+    <style>
+
+        /* Parent Container */
+        .container{
+            position: relative;
+            width: 400px;
+            height: 250px;
+            border: 2px solid black;
+        }
+
+        /* Common Box Style */
+        .box{
+            width: 150px;
+            height: 150px;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        /* Red Box */
+        .box1{
+            background: crimson;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        /* Blue Box */
+        .box2{
+            background: royalblue;
+            top: 70px;
+            left: 90px;
+            z-index: 2;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="box box1">Box 1</div>
+
+    <div class="box box2">Box 2</div>
+
+</div>
+
+</body>
+</html>

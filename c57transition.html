@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition Example</title>
+
+    <style>
+
+        /* Box Style */
+        .box{
+            width:150px;
+            height:150px;
+
+            background-color:skyblue;
+            border:2px solid blue;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            /* Transition */
+            transition: 0.5s ease;
+        }
+
+        /* Hover Effect */
+        .box:hover{
+
+            background-color:tomato;
+
+            transform:scale(1.2);
+
+            border-radius:50%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+    Hover Me
+</div>
+
+</body>
+</html>

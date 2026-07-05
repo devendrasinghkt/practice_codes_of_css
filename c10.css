@@ -1,0 +1,6 @@
+.parent  p {
+    color: blue;
+}
+.parent > span {
+    color: green;
+}

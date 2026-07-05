@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Flexbox Example</title>
+
+    <style>
+
+        /* Flex Container */
+        .container{
+            display: flex;
+
+            /* Main Axis Direction */
+            flex-direction: row;
+
+            /* Horizontal Alignment */
+            justify-content: space-around;
+
+            /* Vertical Alignment */
+            align-items: center;
+
+            /* Allow items to wrap */
+            flex-wrap: wrap;
+
+            /* Space between items */
+            gap: 15px;
+
+            height: 300px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        /* Flex Items */
+        .item{
+            width: 120px;
+            height: 80px;
+
+            background-color: lightblue;
+            border: 2px solid blue;
+
+            text-align: center;
+            line-height: 80px;
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h2>CSS Flexbox Example</h2>
+
+<div class="container">
+
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+
+</div>
+
+</body>
+</html>

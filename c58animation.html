@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Animation Example</title>
+
+    <style>
+
+        /* Box Style */
+        .box{
+            width:120px;
+            height:120px;
+
+            background:royalblue;
+            color:white;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            /* Apply Animation */
+            animation: moveBox 3s ease-in-out infinite;
+        }
+
+        /* Define Animation */
+        @keyframes moveBox{
+
+            0%{
+                transform:translateX(0);
+                background:royalblue;
+            }
+
+            50%{
+                transform:translateX(250px);
+                background:tomato;
+            }
+
+            100%{
+                transform:translateX(0);
+                background:green;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+    Animate
+</div>
+
+</body>
+</html>

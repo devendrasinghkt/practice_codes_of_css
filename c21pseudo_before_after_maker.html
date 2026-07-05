@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS ::before ::after ::marker Example</title>
+
+    <style>
+
+        /* Adds content before the heading */
+        h2::before {
+            content: "👉 ";
+        }
+
+        /* Adds content after the heading */
+        h2::after {
+            content: " ✔";
+        }
+
+        /* Styles the bullet (marker) of list items */
+        li::marker {
+            color: red;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h2>Welcome to CSS</h2>
+
+    <!-- List -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+</html>

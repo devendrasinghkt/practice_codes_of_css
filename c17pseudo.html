@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Form Pseudo Classes Demo</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input{
+    padding: 8px;
+    margin: 10px 0;
+}
+
+/* Required */
+input:required{
+    background-color: #fff8dc;
+}
+
+/* Optional */
+input:optional{
+    background-color: #f0f8ff;
+}
+
+/* Valid */
+input:valid{
+    border: 2px solid green;
+}
+
+/* Invalid */
+input:invalid{
+    border: 2px solid red;
+}
+
+/* In Range */
+input:in-range{
+    box-shadow: 0 0 5px green;
+}
+
+/* Out Of Range */
+input:out-of-range{
+    box-shadow: 0 0 5px red;
+}
+
+/* Default */
+input:default{
+    outline: 3px solid blue;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Pseudo Classes Example</h1>
+
+<!-- required + valid/invalid -->
+<label>Email (Required):</label><br>
+<input type="email" required placeholder="Enter Email">
+<br><br>
+
+<!-- optional -->
+<label>Nickname (Optional):</label><br>
+<input type="text" placeholder="Enter Nickname">
+<br><br>
+
+<!-- in-range / out-of-range -->
+<label>Age (18 to 60):</label><br>
+<input type="number" min="18" max="60" value="25">
+<br><br>
+<!-- default -->
+<label>Gender:</label><br>
+
+<input type="radio" name="gender" checked>
+Male
+<input type="radio" name="gender">
+Female
+<br><br>
+<p>
+Try entering:
+<ul>
+<li>Email: <b>abc@gmail.com</b> → Valid (Green)</li>
+<li>Email: <b>abc123</b> → Invalid (Red)</li>
+<li>Age: <b>25</b> → In Range (Green Shadow)</li>
+<li>Age: <b>70</b> → Out Of Range (Red Shadow)</li>
+<li>Male radio button is the default selection (Blue Outline)</li>
+</ul>
+</p>
+</body>
+</html>

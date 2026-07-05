@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Margin Example</title>
+
+    <style>
+
+        /* Same margin on all sides */
+        .box1{
+            border: 2px solid blue;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        /* Top Right Bottom Left */
+        .box2{
+            border: 2px solid green;
+            margin: 10px 20px 30px 40px;
+            padding: 10px;
+        }
+
+        /* Individual margin properties */
+        .box3{
+            border: 2px solid red;
+
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+
+            padding: 10px;
+        }
+
+        /* Centering an element */
+        .box4{
+            width: 200px;
+            border: 2px solid purple;
+            margin: auto;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Same margin -->
+    <div class="box1">
+        Margin: 20px
+    </div>
+
+    <!-- Shorthand margin -->
+    <div class="box2">
+        Margin: 10px 20px 30px 40px
+    </div>
+
+    <!-- Individual margin -->
+    <div class="box3">
+        Top, Right, Bottom, Left Margin
+    </div>
+
+    <!-- Auto margin -->
+    <div class="box4">
+        Center using margin: auto;
+    </div>
+
+</body>
+</html>

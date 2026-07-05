@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Form State Pseudo Classes</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        input{
+            width: 250px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Read Only */
+        input:read-only{
+            background-color: lightgray;
+            border: 2px solid red;
+        }
+
+        /* Read Write */
+        input:read-write{
+            background-color: lightgreen;
+            border: 2px solid green;
+        }
+
+        /* Placeholder Shown */
+        input:placeholder-shown{
+            border: 3px dashed blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Form State Pseudo Classes Example</h2>
+
+    <h3>:read-only</h3>
+    <input type="text" value="This field is Read Only" readonly>
+
+    <h3>:read-write</h3>
+    <input type="text" value="You can edit this field">
+
+    <h3>:placeholder-shown</h3>
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>

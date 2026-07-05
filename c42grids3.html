@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>grid-template-columns Example</title>
+
+    <style>
+
+        /* Grid Container */
+        .container{
+            display: grid;
+
+            /* Create 3 columns */
+            grid-template-columns: 150px 1fr 2fr;
+
+            /* Space between items */
+            gap: 10px;
+
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        /* Grid Items */
+        .item{
+            background-color: lightblue;
+            border: 2px solid blue;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>CSS Grid Template Columns</h2>
+
+    <div class="container">
+
+        <div class="item">Column 1 (150px)</div>
+
+        <div class="item">Column 2 (1fr)</div>
+
+        <div class="item">Column 3 (2fr)</div>
+
+    </div>
+
+</body>
+</html>

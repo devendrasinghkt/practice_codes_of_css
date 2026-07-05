@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transparency vs Opacity</title>
+
+    <style>
+
+        /* Normal box */
+        .normal{
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        /* Opacity affects the entire element */
+        .opacity{
+            background-color: green;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            opacity: 0.5;
+        }
+
+        /* Transparency using RGBA */
+        .transparency{
+            background-color: rgba(255, 0, 0, 0.5);
+            color: black;
+            padding: 15px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Transparency vs Opacity Example</h1>
+
+    <!-- Normal element -->
+    <div class="normal">
+        Normal Box (No Transparency)
+    </div>
+
+    <!-- Opacity affects background and text -->
+    <div class="opacity">
+        Opacity: 0.5 (Background and Text become transparent)
+    </div>
+
+    <!-- RGBA affects only background color -->
+    <div class="transparency">
+        RGBA Transparency (Only Background is Transparent)
+    </div>
+
+</body>
+</html>

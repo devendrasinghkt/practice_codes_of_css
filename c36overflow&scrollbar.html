@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Overflow Example</title>
+
+    <style>
+
+        /* Common box style */
+        .box{
+            width: 250px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        /* Default overflow */
+        .visible{
+            overflow: visible;
+        }
+
+        /* Hide extra content */
+        .hidden{
+            overflow: hidden;
+        }
+
+        /* Always show scrollbar */
+        .scroll{
+            overflow: scroll;
+        }
+
+        /* Show scrollbar only when needed */
+        .auto{
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box visible">
+        <strong>overflow: visible</strong><br>
+        This is a long text that extends outside the box because the overflow is visible.
+    </div>
+
+    <div class="box hidden">
+        <strong>overflow: hidden</strong><br>
+        This is a long text that gets clipped and hidden when it exceeds the box size.
+    </div>
+
+    <div class="box scroll">
+        <strong>overflow: scroll</strong><br>
+        This is a long text that creates horizontal and vertical scrollbars even if they are not required.
+    </div>
+
+    <div class="box auto">
+        <strong>overflow: auto</strong><br>
+        This is a long text that shows scrollbars only when the content exceeds the container size.
+    </div>
+
+</body>
+</html>

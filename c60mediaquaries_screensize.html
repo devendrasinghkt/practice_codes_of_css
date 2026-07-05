@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Media Query Example</title>
+
+    <style>
+
+        /* Default Style (Desktop) */
+        body{
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        .box{
+            width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border: 2px solid blue;
+        }
+
+        /* Tablet */
+        @media (max-width:768px){
+
+            body{
+                background-color: lightgreen;
+            }
+
+            .box{
+                width: 80%;
+            }
+
+        }
+
+        /* Mobile */
+        @media (max-width:480px){
+
+            body{
+                background-color: lightcoral;
+            }
+
+            .box{
+                width: 95%;
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        Resize the browser window to see the Media Query effect.
+    </div>
+
+</body>
+</html>

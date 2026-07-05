@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Elements</title>
+
+    <style>
+
+        /* Style the first line */
+        p.firstline::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Style the first letter */
+        p.firstletter::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        /* Style selected text */
+        p.selection::selection {
+            background: yellow;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>::first-line</h2>
+    <p class="firstline">
+        This is a paragraph. The first line will be blue and bold.
+    </p>
+
+    <h2>::first-letter</h2>
+    <p class="firstletter">
+        This paragraph has a large red first letter.
+    </p>
+
+    <h2>::selection</h2>
+    <p class="selection">
+        Select this text with your mouse to see the selection effect.
+    </p>
+
+</body>
+</html>

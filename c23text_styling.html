@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Text Styling Demo</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+        /* Text Alignment */
+        .center{
+            text-align: center;
+        }
+
+        .justify{
+            text-align: justify;
+        }
+
+        /* Text Decoration */
+        .underline{
+            text-decoration: underline;
+        }
+
+        .line-through{
+            text-decoration: line-through;
+        }
+
+        .wavy{
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: red;
+        }
+
+        /* Font Properties */
+        .font-demo{
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        /* Text Transform */
+        .uppercase{
+            text-transform: uppercase;
+        }
+
+        .lowercase{
+            text-transform: lowercase;
+        }
+
+        .capitalize{
+            text-transform: capitalize;
+        }
+
+        /* Spacing */
+        .spacing{
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            line-height: 2;
+        }
+
+        /* Text Indent */
+        .indent{
+            text-indent: 50px;
+        }
+
+        /* White Space */
+        .whitespace{
+            white-space: pre-wrap;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Text Styling Demo</h1>
+
+    <h2>1. Text Align</h2>
+    <p class="center">
+        This text is center aligned.
+    </p>
+
+    <p class="justify">
+        This paragraph uses justify alignment. The text spreads evenly across the width of the container.
+    </p>
+
+    <hr>
+
+    <h2>2. Text Decoration</h2>
+    <p class="underline">This text is underlined.</p>
+
+    <p class="line-through">This text has a line through it.</p>
+
+    <p class="wavy">This text has a red wavy underline.</p>
+
+    <hr>
+
+    <h2>3. Font Properties</h2>
+    <p class="font-demo">
+        Font Size + Italic + Bold Example
+    </p>
+
+    <hr>
+
+    <h2>4. Text Transform</h2>
+    <p class="uppercase">hello world</p>
+
+    <p class="lowercase">HELLO WORLD</p>
+
+    <p class="capitalize">welcome to css tutorial</p>
+
+    <hr>
+
+    <h2>5. Letter, Word and Line Spacing</h2>
+    <p class="spacing">
+        CSS makes text more readable by controlling letter spacing,
+        word spacing and line height.
+    </p>
+
+    <hr>
+
+    <h2>6. Text Indent</h2>
+    <p class="indent">
+        This paragraph starts with a 50px indentation on the first line.
+        Text indent is commonly used in books and articles.
+    </p>
+
+    <hr>
+
+    <h2>7. White Space</h2>
+    <div class="whitespace">
+Hello      World
+
+CSS      Tutorial
+
+Multiple spaces and line breaks
+are preserved.
+    </div>
+
+</body>
+</html>

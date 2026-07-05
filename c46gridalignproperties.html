@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS align-items Example</title>
+
+    <style>
+
+        /* Grid Container */
+        .container{
+            display: grid;
+
+            grid-template-columns: repeat(2, 200px);
+
+            /* Height of each row */
+            grid-template-rows: repeat(2, 150px);
+
+            gap: 15px;
+
+            border: 2px solid black;
+            padding: 20px;
+
+            /* Change this value:
+               start
+               end
+               center
+               stretch
+            */
+            align-items: center;
+        }
+
+        /* Grid Items */
+        .item{
+            width: 100px;
+            height: 60px;
+
+            background: lightgreen;
+            border: 2px solid green;
+
+            text-align: center;
+            line-height: 60px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>align-items Example</h2>
+
+    <div class="container">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Variables Example</title>
+
+    <style>
+
+        /* Global Variables */
+        :root{
+            --primary-color: royalblue;
+            --secondary-color: tomato;
+            --text-color: white;
+            --border-radius: 10px;
+            --padding: 20px;
+        }
+
+        /* Card Style */
+        .card{
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: var(--padding);
+            border-radius: var(--border-radius);
+            width: 250px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        /* Button Style */
+        .btn{
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: var(--primary-color);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="card">
+        <h2>CSS Variables</h2>
+        <button class="btn">Click Me</button>
+    </div>
+
+</body>
+</html>

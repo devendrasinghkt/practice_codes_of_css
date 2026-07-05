@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS justify-items Example</title>
+
+    <style>
+
+        /* Grid Container */
+        .container{
+            display: grid;
+
+            grid-template-columns: repeat(2, 200px);
+
+            gap: 15px;
+
+            border: 2px solid black;
+            padding: 20px;
+
+            /* Change this value to:
+               start
+               end
+               center
+               stretch
+            */
+            justify-items: center;
+        }
+
+        /* Grid Items */
+        .item{
+            width: 80px;
+            height: 80px;
+
+            background-color: lightblue;
+            border: 2px solid blue;
+
+            text-align: center;
+            line-height: 80px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>justify-items Example</h2>
+
+    <div class="container">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+
+    </div>
+
+</body>
+</html>

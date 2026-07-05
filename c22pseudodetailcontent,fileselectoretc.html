@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Pseudo Elements</title>
+
+    <style>
+
+        /* Style placeholder text */
+        input::placeholder{
+            color: gray;
+            font-style: italic;
+        }
+
+        /* Style file upload button */
+        input[type="file"]::file-selector-button{
+            background-color: lightblue;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        /* Style details content */
+        details::details-content{
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Placeholder Example</h2>
+
+    <!-- Placeholder text -->
+    <input type="text" placeholder="Enter your name">
+
+    <hr>
+
+    <h2>File Selector Button Example</h2>
+
+    <!-- File upload button -->
+    <input type="file">
+
+    <hr>
+
+    <h2>Details Content Example</h2>
+
+    <!-- Expandable content -->
+    <details>
+        <summary>Click to View Details</summary>
+        <p>This content is styled using the ::details-content pseudo-element.</p>
+    </details>
+
+</body>
+</html>

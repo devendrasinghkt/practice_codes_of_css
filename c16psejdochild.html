@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Class Example</title>
+
+    <style>
+        p:first-child{
+            color:red;
+        }
+
+        p:last-child{
+            color:blue;
+        }
+
+        li:nth-child(2){
+            background-color:yellow;
+        }
+
+        div:empty{
+            border:2px solid black;
+            height:30px;
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>First Child Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Last Child Paragraph</p>
+    </div>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3>Empty Div Example</h3>
+    <div></div>
+
+</body>
+</html>

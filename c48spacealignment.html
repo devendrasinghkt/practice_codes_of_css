@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grid justify-content</title>
+
+    <style>
+
+        /* Outer Container */
+        .container{
+            width: 900px;
+            height: 300px;
+
+            border: 2px solid black;
+
+            display: grid;
+
+            /* Grid width is smaller than container */
+            grid-template-columns: 120px 120px 120px;
+
+            gap: 10px;
+
+            /* Try different values */
+            justify-content: center;
+        }
+
+        /* Grid Items */
+        .item{
+            background-color: lightblue;
+            border: 2px solid blue;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>justify-content Example</h2>
+
+    <div class="container">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+</body>
+</html>

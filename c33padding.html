@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Padding Example</title>
+
+    <style>
+
+        /* Same padding on all sides */
+        .box1{
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Top Right Bottom Left */
+        .box2{
+            border: 2px solid green;
+            padding: 10px 20px 30px 40px;
+            margin: 10px;
+        }
+
+        /* Individual padding properties */
+        .box3{
+            border: 2px solid red;
+
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Same padding on all sides -->
+    <div class="box1">
+        Padding: 20px
+    </div>
+
+    <!-- Shorthand padding -->
+    <div class="box2">
+        Padding: 10px 20px 30px 40px
+    </div>
+
+    <!-- Individual padding -->
+    <div class="box3">
+        Top, Right, Bottom, Left Padding
+    </div>
+
+</body>
+</html>

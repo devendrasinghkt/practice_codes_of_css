@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Measurement Units</title>
+
+    <style>
+
+        /* px = Fixed size */
+        .px-box{
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+
+        /* em = Relative to parent font size */
+        .parent{
+            font-size: 20px;
+        }
+
+        .em-text{
+            font-size: 2em; /* 2 × 20px = 40px */
+        }
+
+        /* rem = Relative to root(html) font size */
+        .rem-text{
+            font-size: 2rem; /* 2 × root font size */
+        }
+
+        /* vw = Percentage of viewport width */
+        .vw-box{
+            width: 50vw; /* 50% of screen width */
+            border: 2px solid blue;
+            margin-bottom: 10px;
+        }
+
+        /* vh = Percentage of viewport height */
+        .vh-box{
+            height: 20vh; /* 20% of screen height */
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS Measurement Units Example</h1>
+
+    <!-- px Example -->
+    <div class="px-box">
+        Width: 200px
+    </div>
+
+    <!-- em Example -->
+    <div class="parent">
+        Parent Font Size = 20px
+        <p class="em-text">
+            This text uses 2em
+        </p>
+    </div>
+
+    <!-- rem Example -->
+    <p class="rem-text">
+        This text uses 2rem
+    </p>
+
+    <!-- vw Example -->
+    <div class="vw-box">
+        Width: 50vw
+    </div>
+
+    <!-- vh Example -->
+    <div class="vh-box">
+        Height: 20vh
+    </div>
+
+</body>
+</html>

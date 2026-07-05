@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position Example</title>
+
+    <style>
+
+        body{
+            height: 1500px;
+        }
+
+        /* Default position */
+        .static{
+            position: static;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Moves relative to original position */
+        .relative{
+            position: relative;
+            top: 20px;
+            left: 30px;
+            border: 2px solid green;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Parent for absolute element */
+        .parent{
+            position: relative;
+            border: 2px solid black;
+            height: 150px;
+            margin: 20px;
+        }
+
+        /* Positioned relative to parent */
+        .absolute{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 2px solid red;
+            padding: 10px;
+        }
+
+        /* Stays fixed on screen */
+        .fixed{
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: yellow;
+            padding: 10px;
+        }
+
+        /* Becomes fixed while scrolling */
+        .sticky{
+            position: sticky;
+            top: 0;
+            background: orange;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Position -->
+    <div class="fixed">
+        Fixed
+    </div>
+
+    <!-- Sticky Position -->
+    <div class="sticky">
+        Sticky Header
+    </div>
+
+    <!-- Static Position -->
+    <div class="static">
+        Static Position
+    </div>
+
+    <!-- Relative Position -->
+    <div class="relative">
+        Relative Position
+    </div>
+
+    <!-- Absolute Position -->
+    <div class="parent">
+        Parent Element
+
+        <div class="absolute">
+            Absolute Position
+        </div>
+    </div>
+
+    <p>Scroll down to see Fixed and Sticky effects.</p>
+
+</body>
+</html>

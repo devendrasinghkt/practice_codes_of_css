@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Position Example</title>
+
+    <style>
+
+        .box{
+            width: 600px;
+            height: 300px;
+
+            border: 2px solid black;
+
+            background-image: url("nature.jpg");
+            background-repeat: no-repeat;
+        }
+
+        /* Center */
+        .center{
+            background-position: center;
+        }
+
+        /* Top Right */
+        .top-right{
+            background-position: top right;
+        }
+
+        /* Bottom Left */
+        .bottom-left{
+            background-position: bottom left;
+        }
+
+        /* Using Pixels */
+        .pixel{
+            background-position: 50px 30px;
+        }
+
+        /* Using Percentages */
+        .percentage{
+            background-position: 70% 30%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box center">
+        Center Position
+    </div>
+
+    <br>
+
+    <div class="box top-right">
+        Top Right Position
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS place-items Example</title>
+
+    <style>
+
+        /* Grid Container */
+        .container{
+            display: grid;
+
+            grid-template-columns: repeat(2, 200px);
+            grid-template-rows: repeat(2, 150px);
+
+            gap: 15px;
+
+            border: 2px solid black;
+            padding: 20px;
+
+            /* Change this value:
+               start
+               end
+               center
+               stretch
+            */
+            place-items: center;
+        }
+
+        /* Grid Items */
+        .item{
+            width: 80px;
+            height: 60px;
+
+            background-color: lightblue;
+            border: 2px solid blue;
+
+            text-align: center;
+            line-height: 60px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>CSS place-items Example</h2>
+
+    <div class="container">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+
+    </div>
+
+</body>
+</html>
